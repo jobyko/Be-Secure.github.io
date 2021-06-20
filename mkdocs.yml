@@ -1,0 +1,11 @@
+site_name: Be-Secure
+theme: windmill
+nav:
+  - Home : ./besec_info/be-Secure-introduction.md
+  - Developers: ./besec_info/Developers.md
+  - Documentation: ./besec_info/Documentation.md
+  - Tech stack - An introduction: ./besec_info/techstack_introduction.md
+  - Tech stack data collection: ./besec_info/techstack_introduction.md
+  - Licence: ./besec_info/license.md
+  - FAQ: ./besec_info/faq.md
+  - WIKI: ./besec_info/wiki.md
