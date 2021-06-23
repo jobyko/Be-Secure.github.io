@@ -11,4 +11,4 @@ SDLC is a process followed for a software project, within a software organizatio
 ## Future Development life cycle.
 
 
-Reasearch and analysis is ongoing on this topic. TBD
+Research and analysis are ongoing on this topic. TBD
