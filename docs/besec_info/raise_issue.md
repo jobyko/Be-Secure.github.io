@@ -1,4 +1,4 @@
-# Process for raising an issue
+### Process for raising an issue
 
 Before raising an issue the contributor should follow the listed steps:
 
