@@ -302,7 +302,7 @@ This security stack focuses on all open source security tools and to secure thes
 Need help to view the  utility version ? [click here](./utility-catelog.md)
 
  
- ### Projects we track
+### Projects we track
 
 As part of the Be-Secure project, the community will be tracking the following projects –
 
