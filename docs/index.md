@@ -2,14 +2,14 @@
 
 It is an umbrella of open source security projects and utilities tracked and maintained by the Be-Secure community.
 
+#### **Vision**
+
+We envision a future where the Be-Secure community becomes the one-stop for all open source security tools and technologies that interoperate without the need for customized integrations with security handled proactively.
+
 
 #### **Mission**
 
 Establish a community of open source security specialist through Be-Secure community initiative.
-
-#### **Vision**
-
-We envision a future where the Be-Secure community becomes the one-stop for all open source security tools and technologies that interoperate without the need for customized integrations with security handled proactively.
 
 
 #### **Goal**

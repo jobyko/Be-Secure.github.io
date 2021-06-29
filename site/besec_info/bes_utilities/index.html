@@ -33,6 +33,11 @@
         
         var pageToc = [
           {title: "BeSman", url: "#_top", children: [
+              {title: "Getting started guide", url: "#getting-started-guide" },
+              {title: "How to contribute", url: "#how-to-contribute" },
+              {title: "Development Activities:", url: "#development-activities" },
+              {title: "Security Testing Activities:", url: "#security-testing-activities" },
+              {title: "Community Activities:", url: "#community-activities" },
           ]},
           {title: "Open source Security tech stacks", url: "#open-source-security-tech-stacks", children: [
           ]},
@@ -42,6 +47,9 @@
               {title: "Application security", url: "#application-security" },
               {title: "Distributed Application and Blockchain Security", url: "#distributed-application-and-blockchain-security" },
               {title: "open source Security Tool", url: "#open-source-security-tool" },
+              {title: "Projects we track", url: "#projects-we-track" },
+              {title: "Projects we contribute", url: "#projects-we-contribute" },
+              {title: "Be-Secure Community Dashboard", url: "#be-secure-community-dashboard" },
           ]},
         ];
 
@@ -101,6 +109,152 @@ The BeSman utility provides command-line capability to provision customized envi
 <p>BeSman utility will also provide configurable capabilities that would permit the user to configure the tools and dependencies to be pre-bundled in the environment.</p>
 <p>Individuals will have complete control over what goes into building and provisioning the environment.</p>
 <p>The base BeSman environment can be customized further to address specific project needs. This gives a lot of flexibility to the developer/security  tester to optimize their work environment in a seamless manner.</p>
+<h4 id="getting-started-guide">Getting started guide</h4>
+<p>Installing BeSman using oah-shell We will be using <a href="https://github.com/hyperledgerkochi/oah-installer">oah-installer</a>, a component of <a href="https://openapphack.github.io/OAH/">OpenAppHack(OAH)</a>, to install <a href="https://github.com/hyperledgerkochi/oah-shell">oah-shell</a> in the local system and using it to bring up <a href="https://github.com/Be-Secure/oah-bes-vm">oah-bes-vm</a> with BeSman installed.</p>
+<p>Pre-requisites</p>
+<ul>
+<li>
+<p>Virtual Box</p>
+</li>
+<li>
+<p>Vagrant</p>
+</li>
+<li>
+<p>Ansible</p>
+</li>
+</ul>
+<p>Installation</p>
+<ol>
+<li>
+<p>Open your terminal</p>
+</li>
+<li>
+<p>Execute the below command to set the correct namespace</p>
+</li>
+<li>
+<p>export OAH_NAMESPACE=be-secure</p>
+</li>
+<li>
+<p>Install oah-shell</p>
+</li>
+<li>
+<p><code>curl -L https://raw.githubusercontent.com/Be-secure/oah-installer/master/install.sh | bash</code></p>
+</li>
+<li>
+<p>Confirm the installation oah-shell by executing the below command which would list various oah commands</p>
+</li>
+<li>
+<p>oah</p>
+</li>
+<li>
+<p>Execute the below command to get the list of environments</p>
+</li>
+<li>
+<p>oah list</p>
+</li>
+</ol>
+<p><strong>Note: Make sure oah-bes-vm is listed. If not, execute step 2 and run the below command</strong></p>
+<pre><code>`source ${OAH_DIR}/bin/oah-init`
+</code></pre>
+<ol>
+<li>
+<p>Setup oah-bes-vm for BeSman by executing the below command.</p>
+</li>
+<li>
+<p><code>oah install -v oah-bes-vm</code></p>
+</li>
+</ol>
+<p>Testing</p>
+<ol>
+<li>
+<p>Install an environment</p>
+<p><code>bes install -env [environment_name] -V [version]</code></p>
+</li>
+<li>
+<p>Run the below command to get the list of available enviornments</p>
+<p><code>bes list</code></p>
+</li>
+<li>
+<p>Uninstall an environment</p>
+<p><code>bes uninstall -env [environment_name] -V [version]</code></p>
+</li>
+</ol>
+<p>Check out the demo video</p>
+<p>&lt; Video &gt;</p>
+<h4 id="how-to-contribute">How to contribute</h4>
+<p>Be-Secure is a community first open source project that would help open source developers and security professionals to carry out security testing of different open source security technology stacks.</p>
+<h4 id="development-activities">Development Activities:</h4>
+<ul>
+<li>
+<p>Focus on developing and provisioning new BeSman environments for different open source technology combinations</p>
+</li>
+<li>
+<p>Raise issues for existing BeSman environments to report new issues,</p>
+</li>
+<li>
+<p>Work on identified issues with BeSman environments.</p>
+</li>
+<li>
+<p>Work on feature sets to enhance security capabilities of open source security projects</p>
+</li>
+</ul>
+<h4 id="security-testing-activities">Security Testing Activities:</h4>
+<ul>
+<li>
+<p>Focus on conducting security assessment of open source technologies using BeSman sec environments,</p>
+</li>
+<li>
+<p>Developing customized security testing scripts to be pre-bundled with the respective BeSman sec environment.</p>
+</li>
+<li>
+<p>Assess new open source security projects and document point of view on the respective project</p>
+</li>
+<li>
+<p>Identify new security capabilities to be developed</p>
+</li>
+</ul>
+<h4 id="community-activities">Community Activities:</h4>
+<ul>
+<li>
+<p>Identify new open source projects to be assessed</p>
+</li>
+<li>
+<p>Community meetups</p>
+</li>
+<li>
+<p>Creating awareness about Be-Secure project</p>
+</li>
+<li>
+<p>Maintaining Be-Secure project repositories</p>
+</li>
+</ul>
+<p><strong>Seven stage Be-Secure CE Security Assessment</strong></p>
+<p>This section describes the seven stages of Be-Secure CE security assessment to enhance the security posture of open source projects / open source tech stacks.</p>
+<p>Based on the request from the community member / user of Be-Secure project to assess an open source tech stack,</p>
+<ul>
+<li>
+<p>First stage: The community will first identify the blueprint for BeSman environment using the details on the open source tech stack that has been shared.</p>
+</li>
+<li>
+<p>Second stage: If a suitable blueprint doesn’t exist, the community members will work on building a new BeSman environment. This will be the base environment to perform development activities using the shared open source tech stack.</p>
+</li>
+<li>
+<p>Third stage: The next stage will be to build the security testing environment/sandbox that can be utilized for conducting security testing for the specific open source tech stack.</p>
+</li>
+<li>
+<p>Fourth stage: Conduct security assessment based on the open source tech stack and identify the vulnerabilities in it. This vulnerability information will be published.</p>
+</li>
+<li>
+<p>Fifth stage: Identify and develop security patches for the identified vulnerabilities.</p>
+</li>
+<li>
+<p>Sixth stage: Upgrade the respective BeSman environments with the confirmed security patches to strengthen their security posture. Publish the upgraded BeSman environments for active consumption</p>
+</li>
+<li>
+<p>Seventh stage: For an existing BeSman environment, the community will focus on identifying the latest security vulnerabilities and mapping it to the respective environment. This is a continuous activity that is focused on enhancing the security posture of BeSman environments to address the latest identified vulnerabilities.</p>
+</li>
+</ul>
+<p><img alt="alt text" src="../../img/Enhance-BeSman.PNG" /></p>
 <h3 id="open-source-security-tech-stacks">Open source Security tech stacks</h3>
 <p>We have grouped various open source technologies into 5 main categories. By doing so, it will help us to take appropriate security measures and processes to enhance the security of these open source tech stacks.</p>
 <p>We should be able to accommodate almost all the existing open source technologies in any one of the 5 categories. The categories are defined based on the common characteristics and usage of the respective open source technologies.</p>
@@ -448,6 +602,79 @@ The BeSman utility provides command-line capability to provision customized envi
 </tbody>
 </table>
 <p>Need help to view the  utility version ? <a href="../utility-catelog/">click here</a></p>
+<h3 id="projects-we-track">Projects we track</h3>
+<p>As part of the Be-Secure project, the community will be tracking the following projects –</p>
+<ul>
+<li>
+<p>STIX Shifter</p>
+</li>
+<li>
+<p>OpenDXL Ontology</p>
+</li>
+<li>
+<p>NIST SCAP v2</p>
+</li>
+<li>
+<p>Hyperledger Fabric</p>
+</li>
+<li>
+<p>Hyperledger Indy</p>
+</li>
+<li>
+<p>Hyperledger Sawtooth</p>
+</li>
+<li>
+<p>Hyperledger BESU</p>
+</li>
+<li>
+<p>Hyperledger BURROW</p>
+</li>
+<li>
+<p>Hyperledger IROHA</p>
+</li>
+<li>
+<p>Hyperledger Aries</p>
+</li>
+<li>
+<p>Hyperledger URSA</p>
+</li>
+<li>
+<p>Hyperledger CACTUS</p>
+</li>
+<li>
+<p>Hyperledger CELLO</p>
+</li>
+<li>
+<p>Hyperledger CALIPER</p>
+</li>
+<li>
+<p>DefectDojo</p>
+</li>
+<li>
+<p>SAMM</p>
+</li>
+<li>
+<p>OWTF</p>
+</li>
+<li>
+<p>Security Shepherd Top Ten</p>
+</li>
+<li>
+<p>OWASP ZAP</p>
+</li>
+<li>
+<p>Hygieia</p>
+</li>
+</ul>
+<h3 id="projects-we-contribute">Projects we contribute</h3>
+<p>As a community we will be contributing to the following projects –</p>
+<ul>
+<li>TBD</li>
+</ul>
+<h3 id="be-secure-community-dashboard">Be-Secure Community Dashboard</h3>
+<ul>
+<li>TBD</li>
+</ul>
 
   <br>
     
