@@ -1,25 +1,24 @@
 
-### **BeSman**
+### 1. **BeSman**
  
-
+<div align="justify">
 One of the first utilities to be created as part of the Be-Secure project is BeSman.
-
-
-BeSman – is a command-line utility to provision customized environments for each open source tech stack. These environments are known as BeSman environments. We have two types of BeSman environments – **dev and sec environments**. 
-
-The development environment is pre-bundled with all tools and dependencies that a developer would need to work on a specific open source project. Similarly, the sec environments are pre-bundled with a set of open source security tools that a security tester 
-
+<p><p>
+BeSman is a command-line utility to provision customized environments for each open source tech stack. These environments are known as BeSman environments. We have two types of BeSman environments – dev and sec environments. 
+<p>
+The development environment is pre-bundled with all tools and dependencies that a developer would need to work on a specific open source project. Similarly, the sec environments are pre-bundled with a set of open source security tools that a security tester can leverage to conduct planned security assessment. 
+</div>
  
 **Why do we need BeSman utility**
 
- 
+<div align="justify">
 Individuals spend considerable effort to set up and configure the open source project in their local environment to evaluate it / commence working on it. At times individuals run into configuration issues or set up issues which result in them spending more effort to resolve them. This is a sizeable effort that is spent just to get the environment up as compared to the effort spent to build newer capability using an existing open source project. This is a misspend effort that should be managed in a better way. 
 The BeSman utility provides command-line capability to provision customized environments quickly and in a consistent manner. 
- 
- 
+</div>
+ <br>
 **How can BeSman utility help**
 
- 
+<div align="justify">
 BeSman environments are pre-bundled with tools and dependencies for a specific open project and it can be provisioned using simple bash shell commands from BeSman utility.
 
  
@@ -30,13 +29,13 @@ Individuals will have complete control over what goes into building and provisio
 
  
 The base BeSman environment can be customized further to address specific project needs. This gives a lot of flexibility to the developer/security  tester to optimize their work environment in a seamless manner.
+</div>
 
-
-#### Getting started guide
+#### ** A   Getting started guide**
 
 Installing BeSman using oah-shell We will be using [oah-installer](https://github.com/hyperledgerkochi/oah-installer), a component of [OpenAppHack(OAH)](https://openapphack.github.io/OAH/), to install [oah-shell](https://github.com/hyperledgerkochi/oah-shell) in the local system and using it to bring up [oah-bes-vm](https://github.com/Be-Secure/oah-bes-vm) with BeSman installed.
 
-Pre-requisites
+**_Pre-requisites_**
 
 * Virtual Box
 
@@ -45,36 +44,32 @@ Pre-requisites
 * Ansible
 
 
-Installation
+**_Installation_**
 
 1. Open your terminal
 
-2. Execute the below command to set the correct namespace
+2. Install oah-shell
+   
+    _curl -L https://raw.githubusercontent.com/Be-secure/oah-installer/master/install.sh | bash_
 
-3. export OAH_NAMESPACE=be-secure
+3. Confirm the installation oah-shell by executing the below command which would list various oah commands
 
-4. Install oah-shell
+4. oah
 
-5. `curl -L https://raw.githubusercontent.com/Be-secure/oah-installer/master/install.sh | bash`
+5. Execute the below command to get the list of environments
 
-6. Confirm the installation oah-shell by executing the below command which would list various oah commands
+6. oah list
 
-7. oah
-
-8. Execute the below command to get the list of environments
-
-9. oah list
-
-**Note: Make sure oah-bes-vm is listed. If not, execute step 2 and run the below command**
-
+    **Note: Make sure oah-bes-vm is listed. If not, execute step 2 and run the below command**
+    
     `source ${OAH_DIR}/bin/oah-init`
 
-10. Setup oah-bes-vm for BeSman by executing the below command.
+7. Setup oah-bes-vm for BeSman by executing the below command.
+  
+    `oah install -v oah-bes-vm`
 
-11. `oah install -v oah-bes-vm`
 
-
-Testing
+**_Testing_**
 
 1. Install an environment
 
@@ -88,15 +83,15 @@ Testing
 
     `bes uninstall -env [environment_name] -V [version]`
 
-Check out the demo video
 
-< Video >
 
-#### How to contribute
+#### ** B   How to contribute**
+
+
 
 Be-Secure is a community first open source project that would help open source developers and security professionals to carry out security testing of different open source security technology stacks.
 
-#### Development Activities:
+<h5><b><u> Development Activities:</u></b></h5>
 
 * Focus on developing and provisioning new BeSman environments for different open source technology combinations
 
@@ -106,7 +101,7 @@ Be-Secure is a community first open source project that would help open source d
 
 * Work on feature sets to enhance security capabilities of open source security projects
 
-#### Security Testing Activities:
+<h5><b><u>Security Testing Activities:</u></h5></b>
 
 * Focus on conducting security assessment of open source technologies using BeSman sec environments,
 
@@ -116,13 +111,13 @@ Be-Secure is a community first open source project that would help open source d
 
 * Identify new security capabilities to be developed
 
-#### Community Activities:
+<h5><b><u>Community Activities:</u></h5></b>
 
 * Identify new open source projects to be assessed
 
 * Community meetups
 
-* Creating awareness about Be-Secure project
+* Creating awareness about Be-Secure projectsud
 
 * Maintaining Be-Secure project repositories
 
@@ -148,7 +143,11 @@ Based on the request from the community member / user of Be-Secure project to as
 
 ![alt text](../img/Enhance-BeSman.PNG)
 
-### Open source Security tech stacks
+
+### 2. **BeSman environments**
+
+
+#### ** A   Open source Security tech stacks**
 
 We have grouped various open source technologies into 5 main categories. By doing so, it will help us to take appropriate security measures and processes to enhance the security of these open source tech stacks.
 
@@ -175,18 +174,14 @@ There are two environments for each tool defined under each stack:
 
 
 
-At present, All tech stack and related applications are under Requirement gathering and analysis phase **(R G&A)**
+At present, All tech stack and related applications are under Requirement gathering and analysis phase.
 
 Once Requirement gathering and analysis phase completed, each tech stack will be updated with another column named security status which indicates the current security vulnarabilities and fixes status of that application. 
-  
 
+#### ** B   BeSman Environments in detail**
 
-## BeSman environments
-&nbsp;
-&nbsp;
-
-
-### Security for DevOps Tools
+<br>
+<h5><b>Security for DevOps Tools</h5></b>
 
 This security stack focuses on all kinds of open source tools used in DevOps and how they can be secured both in terms of it source code and its implementation. This would enable users to implement DevSecOps using secured DevOps tools. The identified DevOps tools will be assessed for security vulnerabilities and remediated.
 
@@ -209,8 +204,8 @@ All are in requriment gathering and analysis Phase (R G&A)
 | 02     | bes-chefsec-env                |                                          |  Git, RVM, bes-appsastsec-env, bes-appdastsec-env      |  R G&A  
 
 Need help to view the  utility version ? [click here](./utility-catelog.md)
-
-### Language and Framework security
+<br><br>
+<h5><b>Language and Framework security</h5></b>
 
 This security stack focuses on all open source programming languages and its associated frameworks that are used to build various applications. These programming languages will be assessed and their vulnerabilities remediated. 
 
@@ -231,8 +226,8 @@ This security stack focuses on all open source programming languages and its ass
 
 
 Need help to view the  utility version ? [click here](./utility-catelog.md)
-
-### Application security
+<br><br>
+<h5><b>Application security</h5></b>
 
 This security stack focuses on all open source applications and how they can be secured.
 
@@ -253,8 +248,8 @@ This security stack focuses on all open source applications and how they can be 
 
 
 Need help to view the  utility version ? [click here](./utility-catelog.md)
-
-### Distributed Application and Blockchain Security
+<br><br>
+<h5><b>Distributed Application and Blockchain Security</h5></b>
 
 This security stack focuses on all open source based distributed applications and blockchain frameworks. Majority of blockchain frameworks are open source in nature.
 
@@ -274,8 +269,8 @@ This security stack focuses on all open source based distributed applications an
 | 02     | bes-hyperledgerFabricsec-env   |                                          |  Git, Go, bes-appsastsec-env, bes-appdastsec-env, NPM, Docker  |  R G&A
 
 Need help to view the  utility version ? [click here](./utility-catelog.md)
-
-### open source Security Tool
+<br><br>
+<h5><b>Open source Security Tool</h5></b>
 
 This security stack focuses on all open source security tools and to secure these tools for utilization.
 
@@ -301,58 +296,3 @@ This security stack focuses on all open source security tools and to secure thes
 
 Need help to view the  utility version ? [click here](./utility-catelog.md)
 
- 
-### Projects we track
-
-As part of the Be-Secure project, the community will be tracking the following projects –
-
-* STIX Shifter
-
-* OpenDXL Ontology
-
-* NIST SCAP v2
-
-* Hyperledger Fabric
-
-* Hyperledger Indy
-
-* Hyperledger Sawtooth
-
-* Hyperledger BESU
-
-* Hyperledger BURROW
-
-* Hyperledger IROHA
-
-* Hyperledger Aries
-
-* Hyperledger URSA
-
-* Hyperledger CACTUS
-
-* Hyperledger CELLO
-
-* Hyperledger CALIPER
-
-* DefectDojo
-
-* SAMM
-
-* OWTF
-
-* Security Shepherd Top Ten
-
-* OWASP ZAP
-
-* Hygieia
-
-
-### Projects we contribute
-
-As a community we will be contributing to the following projects –
-
-* TBD
-
-### Be-Secure Community Dashboard
-
-* TBD
