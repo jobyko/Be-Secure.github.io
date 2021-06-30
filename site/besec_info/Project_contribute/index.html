@@ -11,7 +11,7 @@
     
     <link rel="shortcut icon" href="../../img/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <title>Projects and utilities - Be-Secure</title>
+    <title>OSS projects we contribute - Be-Secure</title>
     <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
     <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
     <link href="../../css/base.css" rel="stylesheet">
@@ -32,24 +32,13 @@
       var is_top_frame = false;
         
         var pageToc = [
-          {title: "BeSman", url: "#_top", children: [
-              {title: "Getting started guide", url: "#getting-started-guide" },
-              {title: "How to contribute", url: "#how-to-contribute" },
-              {title: "Development Activities:", url: "#development-activities" },
-              {title: "Security Testing Activities:", url: "#security-testing-activities" },
-              {title: "Community Activities:", url: "#community-activities" },
+          {title: "1. BeSman", url: "#_top", children: [
+              {title: "A   Getting started guide", url: "#a-getting-started-guide" },
+              {title: "B   How to contribute", url: "#b-how-to-contribute" },
           ]},
-          {title: "Open source Security tech stacks", url: "#open-source-security-tech-stacks", children: [
-          ]},
-          {title: "BeSman environments", url: "#besman-environments", children: [
-              {title: "Security for DevOps Tools", url: "#security-for-devops-tools" },
-              {title: "Language and Framework security", url: "#language-and-framework-security" },
-              {title: "Application security", url: "#application-security" },
-              {title: "Distributed Application and Blockchain Security", url: "#distributed-application-and-blockchain-security" },
-              {title: "open source Security Tool", url: "#open-source-security-tool" },
-              {title: "Projects we track", url: "#projects-we-track" },
-              {title: "Projects we contribute", url: "#projects-we-contribute" },
-              {title: "Be-Secure Community Dashboard", url: "#be-secure-community-dashboard" },
+          {title: "2. BeSman environments", url: "#2-besman-environments", children: [
+              {title: "A   Open source Security tech stacks", url: "#a-open-source-security-tech-stacks" },
+              {title: "B   BeSman Environments in detail", url: "#b-besman-environments-in-detail" },
           ]},
         ];
 
@@ -76,20 +65,20 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
     <div class="wm-article-nav pull-right">
-      <a href="../Developers/" class="btn btn-xs btn-default pull-right">
+      <a href="../Community_dashboard/" class="btn btn-xs btn-default pull-right">
         Next
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
-      <a href="../Developers/" class="btn btn-xs btn-link">
-        Developers
+      <a href="../Community_dashboard/" class="btn btn-xs btn-link">
+        Be-Secure Community Dashboard
       </a>
     </div>
     
     <div class="wm-article-nav">
-      <a href="../be-Secure-introduction/" class="btn btn-xs btn-default pull-left">
+      <a href="../tracked_projects/" class="btn btn-xs btn-default pull-left">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../be-Secure-introduction/" class="btn btn-xs btn-link">
-        Home
+        Previous</a><a href="../tracked_projects/" class="btn btn-xs btn-link">
+        OSS projects we track
       </a>
     </div>
     
@@ -97,21 +86,38 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
     
 
-    <h3 id="besman"><strong>BeSman</strong></h3>
-<p>One of the first utilities to be created as part of the Be-Secure project is BeSman.</p>
-<p>BeSman – is a command-line utility to provision customized environments for each open source tech stack. These environments are known as BeSman environments. We have two types of BeSman environments – <strong>dev and sec environments</strong>. </p>
-<p>The development environment is pre-bundled with all tools and dependencies that a developer would need to work on a specific open source project. Similarly, the sec environments are pre-bundled with a set of open source security tools that a security tester </p>
+    <h3 id="1-besman">1. <strong>BeSman</strong></h3>
+<div align="justify">
+One of the first utilities to be created as part of the Be-Secure project is BeSman.
+<p><p>
+BeSman is a command-line utility to provision customized environments for each open source tech stack. These environments are known as BeSman environments. We have two types of BeSman environments – dev and sec environments. 
+<p>
+The development environment is pre-bundled with all tools and dependencies that a developer would need to work on a specific open source project. Similarly, the sec environments are pre-bundled with a set of open source security tools that a security tester can leverage to conduct planned security assessment. 
+</div>
+
 <p><strong>Why do we need BeSman utility</strong></p>
-<p>Individuals spend considerable effort to set up and configure the open source project in their local environment to evaluate it / commence working on it. At times individuals run into configuration issues or set up issues which result in them spending more effort to resolve them. This is a sizeable effort that is spent just to get the environment up as compared to the effort spent to build newer capability using an existing open source project. This is a misspend effort that should be managed in a better way. 
-The BeSman utility provides command-line capability to provision customized environments quickly and in a consistent manner. </p>
-<p><strong>How can BeSman utility help</strong></p>
-<p>BeSman environments are pre-bundled with tools and dependencies for a specific open project and it can be provisioned using simple bash shell commands from BeSman utility.</p>
-<p>BeSman utility will also provide configurable capabilities that would permit the user to configure the tools and dependencies to be pre-bundled in the environment.</p>
-<p>Individuals will have complete control over what goes into building and provisioning the environment.</p>
-<p>The base BeSman environment can be customized further to address specific project needs. This gives a lot of flexibility to the developer/security  tester to optimize their work environment in a seamless manner.</p>
-<h4 id="getting-started-guide">Getting started guide</h4>
+<div align="justify">
+Individuals spend considerable effort to set up and configure the open source project in their local environment to evaluate it / commence working on it. At times individuals run into configuration issues or set up issues which result in them spending more effort to resolve them. This is a sizeable effort that is spent just to get the environment up as compared to the effort spent to build newer capability using an existing open source project. This is a misspend effort that should be managed in a better way. 
+The BeSman utility provides command-line capability to provision customized environments quickly and in a consistent manner. 
+</div>
+
+<p><br>
+<strong>How can BeSman utility help</strong></p>
+<div align="justify">
+BeSman environments are pre-bundled with tools and dependencies for a specific open project and it can be provisioned using simple bash shell commands from BeSman utility.
+
+BeSman utility will also provide configurable capabilities that would permit the user to configure the tools and dependencies to be pre-bundled in the environment.
+
+
+Individuals will have complete control over what goes into building and provisioning the environment.
+
+
+The base BeSman environment can be customized further to address specific project needs. This gives a lot of flexibility to the developer/security  tester to optimize their work environment in a seamless manner.
+</div>
+
+<h4 id="a-getting-started-guide"><strong> A   Getting started guide</strong></h4>
 <p>Installing BeSman using oah-shell We will be using <a href="https://github.com/hyperledgerkochi/oah-installer">oah-installer</a>, a component of <a href="https://openapphack.github.io/OAH/">OpenAppHack(OAH)</a>, to install <a href="https://github.com/hyperledgerkochi/oah-shell">oah-shell</a> in the local system and using it to bring up <a href="https://github.com/Be-Secure/oah-bes-vm">oah-bes-vm</a> with BeSman installed.</p>
-<p>Pre-requisites</p>
+<p><strong><em>Pre-requisites</em></strong></p>
 <ul>
 <li>
 <p>Virtual Box</p>
@@ -123,22 +129,14 @@ The BeSman utility provides command-line capability to provision customized envi
 <p>Ansible</p>
 </li>
 </ul>
-<p>Installation</p>
+<p><strong><em>Installation</em></strong></p>
 <ol>
 <li>
 <p>Open your terminal</p>
 </li>
 <li>
-<p>Execute the below command to set the correct namespace</p>
-</li>
-<li>
-<p>export OAH_NAMESPACE=be-secure</p>
-</li>
-<li>
 <p>Install oah-shell</p>
-</li>
-<li>
-<p><code>curl -L https://raw.githubusercontent.com/Be-secure/oah-installer/master/install.sh | bash</code></p>
+<p><em>curl -L https://raw.githubusercontent.com/Be-secure/oah-installer/master/install.sh | bash</em></p>
 </li>
 <li>
 <p>Confirm the installation oah-shell by executing the below command which would list various oah commands</p>
@@ -151,20 +149,15 @@ The BeSman utility provides command-line capability to provision customized envi
 </li>
 <li>
 <p>oah list</p>
-</li>
-</ol>
 <p><strong>Note: Make sure oah-bes-vm is listed. If not, execute step 2 and run the below command</strong></p>
-<pre><code>`source ${OAH_DIR}/bin/oah-init`
-</code></pre>
-<ol>
+<p><code>source ${OAH_DIR}/bin/oah-init</code></p>
+</li>
 <li>
 <p>Setup oah-bes-vm for BeSman by executing the below command.</p>
-</li>
-<li>
 <p><code>oah install -v oah-bes-vm</code></p>
 </li>
 </ol>
-<p>Testing</p>
+<p><strong><em>Testing</em></strong></p>
 <ol>
 <li>
 <p>Install an environment</p>
@@ -179,11 +172,10 @@ The BeSman utility provides command-line capability to provision customized envi
 <p><code>bes uninstall -env [environment_name] -V [version]</code></p>
 </li>
 </ol>
-<p>Check out the demo video</p>
-<p>&lt; Video &gt;</p>
-<h4 id="how-to-contribute">How to contribute</h4>
+<h4 id="b-how-to-contribute"><strong> B   How to contribute</strong></h4>
 <p>Be-Secure is a community first open source project that would help open source developers and security professionals to carry out security testing of different open source security technology stacks.</p>
-<h4 id="development-activities">Development Activities:</h4>
+<h5><b><u> Development Activities:</u></b></h5>
+
 <ul>
 <li>
 <p>Focus on developing and provisioning new BeSman environments for different open source technology combinations</p>
@@ -198,7 +190,9 @@ The BeSman utility provides command-line capability to provision customized envi
 <p>Work on feature sets to enhance security capabilities of open source security projects</p>
 </li>
 </ul>
-<h4 id="security-testing-activities">Security Testing Activities:</h4>
+<h5><b><u>Security Testing Activities:</u></h5>
+
+<p></b></p>
 <ul>
 <li>
 <p>Focus on conducting security assessment of open source technologies using BeSman sec environments,</p>
@@ -213,7 +207,9 @@ The BeSman utility provides command-line capability to provision customized envi
 <p>Identify new security capabilities to be developed</p>
 </li>
 </ul>
-<h4 id="community-activities">Community Activities:</h4>
+<h5><b><u>Community Activities:</u></h5>
+
+<p></b></p>
 <ul>
 <li>
 <p>Identify new open source projects to be assessed</p>
@@ -222,7 +218,7 @@ The BeSman utility provides command-line capability to provision customized envi
 <p>Community meetups</p>
 </li>
 <li>
-<p>Creating awareness about Be-Secure project</p>
+<p>Creating awareness about Be-Secure projectsud</p>
 </li>
 <li>
 <p>Maintaining Be-Secure project repositories</p>
@@ -255,7 +251,8 @@ The BeSman utility provides command-line capability to provision customized envi
 </li>
 </ul>
 <p><img alt="alt text" src="../../img/Enhance-BeSman.PNG" /></p>
-<h3 id="open-source-security-tech-stacks">Open source Security tech stacks</h3>
+<h3 id="2-besman-environments">2. <strong>BeSman environments</strong></h3>
+<h4 id="a-open-source-security-tech-stacks"><strong> A   Open source Security tech stacks</strong></h4>
 <p>We have grouped various open source technologies into 5 main categories. By doing so, it will help us to take appropriate security measures and processes to enhance the security of these open source tech stacks.</p>
 <p>We should be able to accommodate almost all the existing open source technologies in any one of the 5 categories. The categories are defined based on the common characteristics and usage of the respective open source technologies.</p>
 <p><img alt="alt text" src="../../img/techstack.PNG" /></p>
@@ -272,12 +269,11 @@ The BeSman utility provides command-line capability to provision customized envi
 <p>eg. bes-ansiblesec-env </p>
 </li>
 </ol>
-<p>At present, All tech stack and related applications are under Requirement gathering and analysis phase <strong>(R G&amp;A)</strong></p>
+<p>At present, All tech stack and related applications are under Requirement gathering and analysis phase.</p>
 <p>Once Requirement gathering and analysis phase completed, each tech stack will be updated with another column named security status which indicates the current security vulnarabilities and fixes status of that application. </p>
-<h2 id="besman-environments">BeSman environments</h2>
-<p>&nbsp;
-&nbsp;</p>
-<h3 id="security-for-devops-tools">Security for DevOps Tools</h3>
+<h4 id="b-besman-environments-in-detail"><strong> B   BeSman Environments in detail</strong></h4>
+<p><br>
+<h5><b>Security for DevOps Tools</h5></b></p>
 <p>This security stack focuses on all kinds of open source tools used in DevOps and how they can be secured both in terms of it source code and its implementation. This would enable users to implement DevSecOps using secured DevOps tools. The identified DevOps tools will be assessed for security vulnerabilities and remediated.</p>
 <p>All are in requriment gathering and analysis Phase (R G&amp;A)  </p>
 <blockquote>
@@ -340,8 +336,9 @@ The BeSman utility provides command-line capability to provision customized envi
 </tr>
 </tbody>
 </table>
-<p>Need help to view the  utility version ? <a href="../utility-catelog/">click here</a></p>
-<h3 id="language-and-framework-security">Language and Framework security</h3>
+<p>Need help to view the  utility version ? <a href="../utility-catelog/">click here</a>
+<br><br>
+<h5><b>Language and Framework security</h5></b></p>
 <p>This security stack focuses on all open source programming languages and its associated frameworks that are used to build various applications. These programming languages will be assessed and their vulnerabilities remediated. </p>
 <blockquote>
 <p><strong>Python-Django</strong></p>
@@ -403,8 +400,9 @@ The BeSman utility provides command-line capability to provision customized envi
 </tr>
 </tbody>
 </table>
-<p>Need help to view the  utility version ? <a href="../utility-catelog/">click here</a></p>
-<h3 id="application-security">Application security</h3>
+<p>Need help to view the  utility version ? <a href="../utility-catelog/">click here</a>
+<br><br>
+<h5><b>Application security</h5></b></p>
 <p>This security stack focuses on all open source applications and how they can be secured.</p>
 <blockquote>
 <p><strong>Drupal</strong></p>
@@ -466,8 +464,9 @@ The BeSman utility provides command-line capability to provision customized envi
 </tr>
 </tbody>
 </table>
-<p>Need help to view the  utility version ? <a href="../utility-catelog/">click here</a></p>
-<h3 id="distributed-application-and-blockchain-security">Distributed Application and Blockchain Security</h3>
+<p>Need help to view the  utility version ? <a href="../utility-catelog/">click here</a>
+<br><br>
+<h5><b>Distributed Application and Blockchain Security</h5></b></p>
 <p>This security stack focuses on all open source based distributed applications and blockchain frameworks. Majority of blockchain frameworks are open source in nature.</p>
 <blockquote>
 <p><strong>Hyperledger Indy</strong></p>
@@ -529,8 +528,9 @@ The BeSman utility provides command-line capability to provision customized envi
 </tr>
 </tbody>
 </table>
-<p>Need help to view the  utility version ? <a href="../utility-catelog/">click here</a></p>
-<h3 id="open-source-security-tool">open source Security Tool</h3>
+<p>Need help to view the  utility version ? <a href="../utility-catelog/">click here</a>
+<br><br>
+<h5><b>Open source Security Tool</h5></b></p>
 <p>This security stack focuses on all open source security tools and to secure these tools for utilization.</p>
 <blockquote>
 <p><strong>Application Security Testing (SAST )</strong></p>
@@ -602,79 +602,6 @@ The BeSman utility provides command-line capability to provision customized envi
 </tbody>
 </table>
 <p>Need help to view the  utility version ? <a href="../utility-catelog/">click here</a></p>
-<h3 id="projects-we-track">Projects we track</h3>
-<p>As part of the Be-Secure project, the community will be tracking the following projects –</p>
-<ul>
-<li>
-<p>STIX Shifter</p>
-</li>
-<li>
-<p>OpenDXL Ontology</p>
-</li>
-<li>
-<p>NIST SCAP v2</p>
-</li>
-<li>
-<p>Hyperledger Fabric</p>
-</li>
-<li>
-<p>Hyperledger Indy</p>
-</li>
-<li>
-<p>Hyperledger Sawtooth</p>
-</li>
-<li>
-<p>Hyperledger BESU</p>
-</li>
-<li>
-<p>Hyperledger BURROW</p>
-</li>
-<li>
-<p>Hyperledger IROHA</p>
-</li>
-<li>
-<p>Hyperledger Aries</p>
-</li>
-<li>
-<p>Hyperledger URSA</p>
-</li>
-<li>
-<p>Hyperledger CACTUS</p>
-</li>
-<li>
-<p>Hyperledger CELLO</p>
-</li>
-<li>
-<p>Hyperledger CALIPER</p>
-</li>
-<li>
-<p>DefectDojo</p>
-</li>
-<li>
-<p>SAMM</p>
-</li>
-<li>
-<p>OWTF</p>
-</li>
-<li>
-<p>Security Shepherd Top Ten</p>
-</li>
-<li>
-<p>OWASP ZAP</p>
-</li>
-<li>
-<p>Hygieia</p>
-</li>
-</ul>
-<h3 id="projects-we-contribute">Projects we contribute</h3>
-<p>As a community we will be contributing to the following projects –</p>
-<ul>
-<li>TBD</li>
-</ul>
-<h3 id="be-secure-community-dashboard">Be-Secure Community Dashboard</h3>
-<ul>
-<li>TBD</li>
-</ul>
 
   <br>
     
@@ -687,20 +614,20 @@ The BeSman utility provides command-line capability to provision customized envi
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
     <div class="wm-article-nav pull-right">
-      <a href="../Developers/" class="btn btn-xs btn-default pull-right">
+      <a href="../Community_dashboard/" class="btn btn-xs btn-default pull-right">
         Next
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
-      <a href="../Developers/" class="btn btn-xs btn-link">
-        Developers
+      <a href="../Community_dashboard/" class="btn btn-xs btn-link">
+        Be-Secure Community Dashboard
       </a>
     </div>
     
     <div class="wm-article-nav">
-      <a href="../be-Secure-introduction/" class="btn btn-xs btn-default pull-left">
+      <a href="../tracked_projects/" class="btn btn-xs btn-default pull-left">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../be-Secure-introduction/" class="btn btn-xs btn-link">
-        Home
+        Previous</a><a href="../tracked_projects/" class="btn btn-xs btn-link">
+        OSS projects we track
       </a>
     </div>
     
