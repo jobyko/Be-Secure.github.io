@@ -45,10 +45,6 @@ People *love* thorough bug reports.
 
 
 ### Use a Consistent Coding Style
-You must follow the coding standard described in the [BeSman review Checklist](./checklist.md).
+You must follow the coding standard described in the [Be-Secure review Checklist](./checklist.md).
 
-
-### License
-Any contributions you make will be under the Apache License 2.0 Software License. In short, when you submit code changes, your submissions are understood to be under the same [Apache License 2.0](./license.md) that covers the project. Feel free to contact the maintainers if that's a concern.
-By contributing, you agree that your contributions will be licensed under its Apache License 2.0.
 
