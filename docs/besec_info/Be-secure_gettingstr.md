@@ -1,7 +1,7 @@
 
 
 There are various ways for you to get started with Be-Secure project initiative –
-<br><p>
+<br><br>
 <h4><b><u>Identifying OSS projects that are being tracked and its latest security posture</u></h4></b>
 
 Please go to the section [OSS projects we track](./tracked_projects.md), this will display details on all open source projects that we track from a security perspective. The BeSecure Community dashboard section will display the security posture of each of these tracked projects.

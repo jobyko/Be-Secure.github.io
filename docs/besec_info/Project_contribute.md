@@ -1,5 +1,5 @@
 
-### 1. **BeSman**
+### **BeSman**
  
 <div align="justify">
 One of the first utilities to be created as part of the Be-Secure project is BeSman.
@@ -15,7 +15,7 @@ The development environment is pre-bundled with all tools and dependencies that 
 Individuals spend considerable effort to set up and configure the open source project in their local environment to evaluate it / commence working on it. At times individuals run into configuration issues or set up issues which result in them spending more effort to resolve them. This is a sizeable effort that is spent just to get the environment up as compared to the effort spent to build newer capability using an existing open source project. This is a misspend effort that should be managed in a better way. 
 The BeSman utility provides command-line capability to provision customized environments quickly and in a consistent manner. 
 </div>
- <br>
+ 
 **How can BeSman utility help**
 
 <div align="justify">
@@ -31,7 +31,7 @@ Individuals will have complete control over what goes into building and provisio
 The base BeSman environment can be customized further to address specific project needs. This gives a lot of flexibility to the developer/security  tester to optimize their work environment in a seamless manner.
 </div>
 
-#### ** A   Getting started guide**
+#### **- Getting started guide**
 
 Installing BeSman using oah-shell We will be using [oah-installer](https://github.com/hyperledgerkochi/oah-installer), a component of [OpenAppHack(OAH)](https://openapphack.github.io/OAH/), to install [oah-shell](https://github.com/hyperledgerkochi/oah-shell) in the local system and using it to bring up [oah-bes-vm](https://github.com/Be-Secure/oah-bes-vm) with BeSman installed.
 
@@ -50,17 +50,17 @@ Installing BeSman using oah-shell We will be using [oah-installer](https://githu
 
 2. Install oah-shell
    
-    _curl -L https://raw.githubusercontent.com/Be-secure/oah-installer/master/install.sh | bash_
+    `curl -L https://raw.githubusercontent.com/Be-secure/oah-installer/master/install.sh | bash`
 
 3. Confirm the installation oah-shell by executing the below command which would list various oah commands
 
-4. oah
+    `oah`
 
-5. Execute the below command to get the list of environments
+4. Execute the below command to get the list of environments
 
-6. oah list
+    `oah list`
 
-    **Note: Make sure oah-bes-vm is listed. If not, execute step 2 and run the below command**
+    **Note:** Make sure oah-bes-vm is listed. If not, execute step 2 and run the below command
     
     `source ${OAH_DIR}/bin/oah-init`
 
@@ -85,47 +85,10 @@ Installing BeSman using oah-shell We will be using [oah-installer](https://githu
 
 
 
-#### ** B   How to contribute**
+### **BeSman environments**
 
 
-
-Be-Secure is a community first open source project that would help open source developers and security professionals to carry out security testing of different open source security technology stacks.
-
-<h5><b><u> Development Activities:</u></b></h5>
-
-* Focus on developing and provisioning new BeSman environments for different open source technology combinations
-
-* Raise issues for existing BeSman environments to report new issues,
-
-* Work on identified issues with BeSman environments.
-
-* Work on feature sets to enhance security capabilities of open source security projects
-
-<h5><b><u>Security Testing Activities:</u></h5></b>
-
-* Focus on conducting security assessment of open source technologies using BeSman sec environments,
-
-* Developing customized security testing scripts to be pre-bundled with the respective BeSman sec environment.
-
-* Assess new open source security projects and document point of view on the respective project
-
-* Identify new security capabilities to be developed
-
-<h5><b><u>Community Activities:</u></h5></b>
-
-* Identify new open source projects to be assessed
-
-* Community meetups
-
-* Creating awareness about Be-Secure projectsud
-
-* Maintaining Be-Secure project repositories
-
-
-### 2. **BeSman environments**
-
-
-#### ** A   Open source Security tech stacks**
+#### **-  Open source Security tech stacks**
 
 We have grouped various open source technologies into 5 main categories. By doing so, it will help us to take appropriate security measures and processes to enhance the security of these open source tech stacks.
 
@@ -155,7 +118,7 @@ At present, All tech stack and related applications are under Requirement gather
 
 Once Requirement gathering and analysis phase completed, each tech stack will be updated with another column named security status which indicates the current security vulnarabilities and fixes status of that application. 
 
-#### ** B   BeSman Environments in detail**
+#### **- BeSman Environments in detail**
 
 <br>
 <h5><b>Security for DevOps Tools</h5></b>

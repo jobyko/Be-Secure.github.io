@@ -65,15 +65,15 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 </tr>
 <tr>
 <td align="center">A.1</td>
-<td>All Command files will have a prefix besman-XXXX.sh and  XXXX must be the command name</td>
+<td>All Command files will have a prefix [tool/project]-XXXX.sh and  XXXX must be the command name</td>
 </tr>
 <tr>
 <td align="center">A.2</td>
-<td>All Environment files will have a prefix besman-XXXXX.sh and XXXXX  must be the environment name</td>
+<td>All Environment files will have a prefix [tool/project]-XXXXX.sh and XXXXX  must be the environment name</td>
 </tr>
 <tr>
 <td align="center">A.3</td>
-<td>All Internal besman functions that will be called in other bes scripts must begin with __bes</td>
+<td>All Internal [tool/project] functions that will be called in other bes scripts must begin with __bes</td>
 </tr>
 <tr>
 <td align="center">A.4</td>
@@ -81,7 +81,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 </tr>
 <tr>
 <td align="center"><a href="#">A.5</a></td>
-<td>All besman  environment scripts should have standard set of functions included in them and follow the following naming convention <br> <br>__bes_XXXX_YYYY() function  where XXXX is the corresponding command and YYYY is the environment name <br> <br> For example, if the environment name is "yyyy", then the corresponding commands would look like:- <br> <br> __besman_install_yyyy() <br> __besman_uninstall_yyyy() <br> __besman_update_yyyy() <br> __besman_upgrade_yyyy() <br> __besman_validate_yyyy() <br> __besman_start_yyyy() <br> __besman_stop_yyyy()</td>
+<td>All [tool/project]  environment scripts should have standard set of functions included in them and follow the following naming convention <br> <br><strong>bes_XXXX_YYYY() function  where XXXX is the corresponding command and YYYY is the environment name <br> <br> For example, if the environment name is "yyyy", then the corresponding commands would look like:- <br> <br> </strong>[tool/project]_install_yyyy() <br> <strong>[tool/project]_uninstall_yyyy() <br> </strong>[tool/project]_update_yyyy() <br> <strong>[tool/project]_upgrade_yyyy() <br> </strong>[tool/project]_validate_yyyy() <br> <strong>[tool/project]_start_yyyy() <br> </strong>[tool/project]_stop_yyyy()</td>
 </tr>
 <tr>
 <td align="center"><strong>B</strong></td>
@@ -89,11 +89,11 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 </tr>
 <tr>
 <td align="center">B.1</td>
-<td>All environment variables should be in caps (eg besman_VERSION)</td>
+<td>All environment variables should be in caps (eg [tool/project]_VERSION)</td>
 </tr>
 <tr>
 <td align="center">B.2</td>
-<td>All export variables used in a script should be initiatlized in besman-init.sh</td>
+<td>All export variables used in a script should be initiatlized in [tool/project]-init.sh</td>
 </tr>
 <tr>
 <td align="center">B.3</td>
@@ -117,11 +117,11 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 </tr>
 <tr>
 <td align="center">C.1</td>
-<td>__besman_echo function should be used instead of echo to display messages in the script</td>
+<td>__[tool/project]_echo function should be used instead of echo to display messages in the script</td>
 </tr>
 <tr>
 <td align="center">C.2</td>
-<td>__besman_echo_debug function should be used to display specific error message in the script</td>
+<td>__[tool/project]_echo_debug function should be used to display specific error message in the script</td>
 </tr>
 <tr>
 <td align="center">C.3</td>
