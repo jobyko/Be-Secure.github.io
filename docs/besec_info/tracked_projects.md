@@ -1,35 +1,35 @@
 
 As part of the Be-Secure project, the community will be tracking the following projects –
 
-* STIX Shifter
+* [STIX Shifter](https://github.com/Be-Secure/stix-shifter)
 
-* OpenDXL Ontology
+* [OpenDXL Ontology](https://github.com/Be-Secure/opendxl-ontology)
 
 * NIST SCAP v2
 
-* Hyperledger Fabric
+* [Hyperledger Fabric](https://github.com/Be-Secure/fabric)
 
 * Hyperledger Indy
 
 * Hyperledger Sawtooth
 
-* Hyperledger BESU
+* [Hyperledger BESU](https://github.com/Be-Secure/besu)
 
-* Hyperledger BURROW
+* [Hyperledger BURROW](https://github.com/Be-Secure/burrow)
 
 * Hyperledger IROHA
 
-* Hyperledger Aries
+* [Hyperledger Aries](https://github.com/Be-Secure/aries)
 
 * Hyperledger URSA
 
-* Hyperledger CACTUS
+* [Hyperledger CACTUS](https://github.com/Be-Secure/cactus)
 
-* Hyperledger CELLO
+* [Hyperledger CELLO](https://github.com/Be-Secure/cello)
 
-* Hyperledger CALIPER
+* [Hyperledger CALIPER](https://github.com/Be-Secure/caliper)
 
-* DefectDojo
+* [DefectDojo](https://github.com/Be-Secure/django-DefectDojo)
 
 * SAMM
 
@@ -37,6 +37,6 @@ As part of the Be-Secure project, the community will be tracking the following p
 
 * Security Shepherd Top Ten
 
-* OWASP ZAP
+* [OWASP ZAP](https://github.com/Be-Secure/zaproxy)
 
-* Hygieia
+* [Hygieia](https://github.com/Be-Secure/Hygieia)

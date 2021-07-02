@@ -1,6 +1,6 @@
 ### What is Be-Secure
 
-It is an umbrella of open source security projects and utilities tracked and maintained by the Be-Secure community.
+It is an umbrella of [open source](https://en.wikipedia.org/wiki/Open-source_software) security projects and utilities tracked and maintained by the Be-Secure community.
 
 
 <h5><b><u>VISION</u></b></h5>
