@@ -5,23 +5,23 @@ As part of the Be-Secure project, the community will be tracking the following p
 
 * [OpenDXL Ontology](https://github.com/Be-Secure/opendxl-ontology)
 
-* NIST SCAP v2
+* [NIST SCAP v2](https://github.com/OpenSCAP/openscap)
 
 * [Hyperledger Fabric](https://github.com/Be-Secure/fabric)
 
-* Hyperledger Indy
+* [Hyperledger Indy](https://github.com/Be-Secure/indy-sdk)
 
-* Hyperledger Sawtooth
+* [Hyperledger Sawtooth](https://github.com/Be-Secure/sawtooth-core)
 
 * [Hyperledger BESU](https://github.com/Be-Secure/besu)
 
 * [Hyperledger BURROW](https://github.com/Be-Secure/burrow)
 
-* Hyperledger IROHA
+* [Hyperledger IROHA](https://github.com/Be-Secure/iroha)
 
 * [Hyperledger Aries](https://github.com/Be-Secure/aries)
 
-* Hyperledger URSA
+* [Hyperledger URSA](https://github.com/Be-Secure/ursa)
 
 * [Hyperledger CACTUS](https://github.com/Be-Secure/cactus)
 
@@ -31,11 +31,11 @@ As part of the Be-Secure project, the community will be tracking the following p
 
 * [DefectDojo](https://github.com/Be-Secure/django-DefectDojo)
 
-* SAMM
+* [SAMM](https://github.com/OWASP/samm)
 
-* OWTF
+* [OWTF](https://github.com/owtf/owtf)
 
-* Security Shepherd Top Ten
+* [Security Shepherd Top Ten](https://github.com/OWASP/SecurityShepherd)
 
 * [OWASP ZAP](https://github.com/Be-Secure/zaproxy)
 
