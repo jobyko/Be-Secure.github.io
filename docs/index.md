@@ -3,20 +3,6 @@
 It is an umbrella of [open source](https://en.wikipedia.org/wiki/Open-source_software) security projects and utilities tracked and maintained by the Be-Secure community.
 
 
-<h5><b><u>VISION</u></b></h5>
-<div align="justify">
-We envision a future where the Be-Secure community becomes the one-stop for all open source security tools and technologies that interoperate without the need for customized integrations with security handled proactively.
-</div>
-
-<h5><b><u>MISSION</u></b></h5>
-
-Establish a community of open source security specialist through Be-Secure community initiative.
-
-
-<h5><b><u>GOAL</u></b></h5>
-
-Provides tools, services, training, infrastructure, and resources to achieve this vision.
-
 
 ### Why Be-Secure
 <div align="justify">
@@ -57,3 +43,19 @@ The different open-source security tech stacks identified based on their charact
 	
  
 All source code for Be-Secure projects are in GitHub under [Be-Secure](https://github.com/Be-Secure)
+
+
+<br>
+<h5><b><u>VISION</u></b></h5>
+<div align="justify">
+We envision a future where the Be-Secure community becomes the one-stop for all open source security tools and technologies that interoperate without the need for customized integrations with security handled proactively.
+</div>
+
+<h5><b><u>MISSION</u></b></h5>
+
+Establish a community of open source security specialist through Be-Secure community initiative.
+
+
+<h5><b><u>GOAL</u></b></h5>
+
+Provides tools, services, training, infrastructure, and resources to achieve this vision.
